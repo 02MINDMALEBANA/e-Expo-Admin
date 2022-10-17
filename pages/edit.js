@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, Pressable } from 'react-native';
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-native';
+// import { useParams } from 'react-router-native';
 import { addDoc, collection, doc, getDoc, updateDoc } from 'firebase/firestore';
 import {db} from '../config/firebase'
 import { async } from '@firebase/util';

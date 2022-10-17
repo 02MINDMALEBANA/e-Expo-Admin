@@ -27,17 +27,18 @@ export default function Admin ({navigation}){
            
     },[])
     ////delete function
-    function deletedetail(id) {
-        // alert('delete clicked ', { id })
+    // function deletedetail(id) {
+    //     // alert('delete clicked ', { id })
 
-        const getDoc = doc(db, 'tertiary', id)
-        deleteDoc(getDoc).then(() => {
-            alert('deledted successfully')
-        }).catch(err => {
-            console.log(err)
-        })
+    //     const getDoc = doc(db, 'tertiary', id)
+    //     deleteDoc(getDoc).then(() => {
+    //         alert('deledted successfully')
+    //     }).catch(err => {
+    //         console.log(err)
+    //     })
 
-    }
+    // }
+    
     return(
         <View style={styles.container}>
             <View style={{backgroundColor:'white',height:80,width:300,borderRadius:15}}> 
@@ -67,7 +68,7 @@ export default function Admin ({navigation}){
                            <Text style={styles.output}>Link:{item.InstitutionLink}</Text>
                            <TouchableOpacity>
                                <View style={styles.sign}>
-                                   <Text style={{ color: 'white', marginLeft: 20, marginTop: 10, fontSize: 14, fontWeight: 500 }} onPress={deletedetail}>Delete</Text>
+                                   <Text style={{ color: 'white', marginLeft: 20, marginTop: 10, fontSize: 14, fontWeight: 500 }}>Delete</Text>
                                </View>
                            </TouchableOpacity>
                            <TouchableOpacity>
